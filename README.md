@@ -2,7 +2,9 @@
 
 The official website for **Plervo Suite**, an open-source family of desktop apps for documents, design and media. Visitors can explore the apps, download the Suite for their computer, read security information and optionally support **AlporT**.
 
-**Live site:** [plervo.com](https://plervo.com) · **App source and releases:** [alportblu/plervo-pdf](https://github.com/alportblu/plervo-pdf) · **Optional support:** [Buy Me a Coffee](https://buymeacoffee.com/alport)
+**Live site:** [plervo.com](https://plervo.com) · **App source and releases:** [BonettiAI/plervo-pdf](https://github.com/BonettiAI/plervo-pdf) · **Optional support:** [Buy Me a Coffee](https://buymeacoffee.com/alport)
+
+[Run locally](#run-locally) · [Download configuration](#download-configuration) · [Languages](#languages) · [License](#license)
 
 ## Run locally
 
@@ -33,7 +35,7 @@ Plervo PDF 1.0.8.0, Plervo CAD 1.0.8.0 and Plervo Video 1.0.8.0 are available fr
 
 Public app downloads are tested through the Suite's actual installation components in isolated destinations, including reinstallation. Linux also checks removal and preservation of synthetic files. Local Linux checks use emulated x86_64 containers in addition to native acceptance recorded in CI.
 
-This is an experimental alpha. Final Mac GUI acceptance, installation on a clean Mac, audio hardware, external plugins and wider device coverage remain outside the completed validation. See the [release notes](https://github.com/alportblu/plervo-pdf/releases/tag/v0.1.0-alpha.9) for current limits.
+This is an experimental alpha. Final Mac GUI acceptance, installation on a clean Mac, audio hardware, external plugins and wider device coverage remain outside the completed validation. See the [release notes](https://github.com/BonettiAI/plervo-pdf/releases/tag/v0.1.0-alpha.9) for current limits.
 
 On Mac and Linux, Suite checks the official GitHub catalog at startup and every six hours while open. Settings can switch to manual checks. It shows all detected installed apps and offers newer app packages. A Suite update notice opens the matching official installer; the user installs it and reopens Suite. Existing alpha.5 users need one initial manual upgrade. No background service is installed, and apps are not silently replaced. The standalone PDF Help updater still discovers stable releases only; use Suite for alpha PDF updates on Mac/Linux. Windows Suite and PDF update through Microsoft Store.
 
@@ -53,16 +55,20 @@ Support, security, privacy, credits and 404 pages are translated. Legacy Portugu
 
 ## Security and optional support
 
-The security pages explain the [PDF alpha.7 redaction correction](https://github.com/alportblu/plervo-pdf/releases/tag/v0.1.0-alpha.7), the additional distribution notices and the need to review previously redacted files. Updating does not remove retained data from existing documents.
+The security pages explain the [PDF alpha.7 redaction correction](https://github.com/BonettiAI/plervo-pdf/releases/tag/v0.1.0-alpha.7), the additional distribution notices and the need to review previously redacted files. Updating does not remove retained data from existing documents.
 
 Alpha.9 delivers the subsequent crypto-bigint/ctutils, Tokio and TLS-provider corrections in PDF, Photo, Video and Develop, plus serialized macOS disk-image installation in Suite. Full third-party notices and the documented scoped RSA advisory exceptions remain. The reviewed static site and Rust app sources contain no PHP runtime; the October PHP advisories have no identified entry point in that scope. This is not a claim about unrelated infrastructure or the absence of vulnerabilities.
 
-The `/security/` page and its translations point to the private GitHub reporting channel enabled in `alportblu/plervo-pdf`. The site does not receive the reports' contents.
+The `/security/` page and its translations point to the private GitHub reporting channel enabled in `BonettiAI/plervo-pdf`. The site does not receive the reports' contents.
 
 The owner-provided support destination is https://buymeacoffee.com/alport. Public creator credit uses **AlporT**. The `/support/` page and its translations open the service only when the visitor chooses the link. There are no banking details, service tokens or private keys in this project.
 
 ## Design and attribution
 
-The SVG identity, layout and Suite screenshot are original Plervo work. The current image shows Suite alpha.4 running natively on Ubuntu 24.04, captured by the [acceptance CI](https://github.com/alportblu/plervo-pdf/actions/runs/39001993059) from source `4da05339d4f6f6715d09f0622975b8164be7f480`.
+The SVG identity, layout and Suite screenshot are original Plervo work. The current image shows Suite alpha.4 running natively on Ubuntu 24.04, captured by the [acceptance CI](https://github.com/BonettiAI/plervo-pdf/actions/runs/39001993059) from source `4da05339d4f6f6715d09f0622975b8164be7f480`.
 
 Inter Regular and SemiBold are served locally under OFL-1.1, with the license included, and come from the already attributed Plervo PDF assets. No Adobe or ArtCraft artwork is included. The app catalog uses the original, attributed Plervo icon family; sources, hashes and licenses are in `public/assets/products/`. The visual direction and research are documented in [DESIGN.md](DESIGN.md).
+
+## License
+
+Original website code and documentation are available under the [MIT License](LICENSE). Inter retains its [SIL Open Font License](public/assets/OFL-Inter.txt). Product icons retain their [MIT](public/assets/products/LICENSE-MIT.txt) / [Apache-2.0](public/assets/products/LICENSE-APACHE.txt) notices and attribution. These third-party notices remain part of the distribution.
